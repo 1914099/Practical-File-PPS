@@ -22,7 +22,7 @@ https://images.app.goo.gl/nFUBsDG3zxyqmkCUA
 
 ## 1. Program to add two integers.
 
-
+```C
 /* To add two integers */
 
 #include <stdio.h>
@@ -45,15 +45,18 @@ printf("\n Sum of the number is %d ",a);
 return 0;
 
 }
+```
 ## Output of the program
+```C
 Enter the numbers
 A:4
 
 B:5
 
  Sum of the number is 9 
+```
 # 2. Program to Multiply two Floating Ponit Numbers.
-
+```C
 #include<stdio.h>
 
 int main()
@@ -76,18 +79,18 @@ printf("\nAnswer is: = %.3f", z);
 
 return 0;
 }
-
+```
 ## Output of the program
-
+```C
 Enter The First Numder: 5
 
 Enter The Second Numder: 7
 
 Answer is: = 35.000
-
+```
 ## 3. Program to check odd even number.
 
-
+```C
 #include<stdio.h>
 int main() { 
 
@@ -105,35 +108,55 @@ int main() {
   printf("\n\n");
   return 0;
 }
-
+```
 ## Output of the program
-
+```C
 Enter the Number:7
 
 Number is Odd
+```
 
 ## 4. Program to calculate sum of first 10 natural numbers using for loop.
 
+
+```C
 #include <stdio.h>
+
 void main()
+
 {
     int  j, sum = 0;
 
     printf("The first 10 natural number is :\n");
  
-    for (j = 1; j <= 10; j++)
+    for(j=1;j<=10;j++)
+
     {
         sum = sum + j;
-        printf("%d ",j);    
+        printf("%d ",j);  
+  
     }
+
     printf("\nThe Sum is : %d\n", sum);
+
 }
+
+```
+
 ## Output of the program
 
-The first 10 natural number is :                                                                              
-1 2 3 4 5 6 7 8 9 10                                                                                          
+```C
+
+The first natural number is :  
+                                                                            
+1 2 3 4 5 6 7 8 9 10    
+                                                                                      
 The Sum is : 55
-##  5. Program to print EVEN numbers from 1 to N usinf while loop
+
+```
+
+##  5. Program to print EVEN numbers from 1 to N usinf while loop.
+```C
 #include <stdio.h>
 
 int main()
@@ -161,14 +184,21 @@ int main()
     return 0;
 
 }
+```
+
 ## Output of the program
+```C
 Print all even numbers till: 7
 All even numbers from 1 to 7 are: 
 2
 4
 6
 
+```
+
 ##  6. Program to print ODD numbers from 1 to N usinf while loop
+```C
+
 #include <stdio.h>
 
 int main()
@@ -199,82 +229,86 @@ int main()
 
         return 0;
 }
+```
+
 ## Output of the program
+```C
 Enter the value of N: 5
 Odd Numbers from 1 to 5:
 1 
 3 
 5 
-##  7. Program to make simple calculator using switch.
+```
 
+##  7. Program to make simple calculator using switch.
+```C
 
 # include <stdio.h>
-
 int main()
 {
+char operator;
+float firstNumber,secondNumber;
+    
+printf("Enter an operator (+, -, *,/) : ");
+scanf("%c", &operator);
+    
+printf("Enter two operands: ");
+    
+scanf("%f %f",&firstNumber, &secondNumber);
+    
+switch(operator)
+    
+{
+case '+':
+        
+printf("%f + %f = %f",firstNumber, secondNumber, firstNumber + secondNumber);
+            
+break;
+            
+case '-':
+        
+printf("%f - %f = %f",firstNumber, secondNumber, firstNumber - secondNumber);
+            
+break;
+            
+case '*':
+        
+printf("%f * %f = %f",firstNumber, secondNumber, firstNumber * secondNumber);
+            
+break;
+             
+case '/':
+        
+     
 
-    char operator;
-    
-    float firstNumber,secondNumber;
-    
-    printf("Enter an operator (+, -, *,/) : ");
-    
-    scanf("%c", &operator);
-    
-    printf("Enter two operands: ");
-    
-    scanf("%f %f",&firstNumber, &secondNumber);
-    
-    switch(operator)
-    
-    {
-        case '+':
+
+printf("%f / %f = %f",firstNumber, secondNumber, firstNumber / secondNumber);
+            
+break;
+            
+default:
         
-            printf("%f + %f = %f",firstNumber, secondNumber, firstNumber + secondNumber);
+printf("Error! operator is not correct");
             
-            break;
-            
-        case '-':
-        
-            printf("%f - %f = %f",firstNumber, secondNumber, firstNumber - secondNumber);
-            
-            break;
-            
-        case '*':
-        
-            printf("%f * %f = %f",firstNumber, secondNumber, firstNumber * secondNumber);
-            
-            break;
-            
-        case '/':
-        
-            printf("%f / %f = %f",firstNumber, secondNumber, firstNumber / secondNumber);
-            
-            break;
-            
-        default:
-        
-            printf("Error! operator is not correct");
-            
-    }
+}
     
-    return 0;
+return 0;
     
 }
+```
 
 ## Output of the program
+```C
 Enter an operator (+, -, *,/) : +
 Enter two operands: 50 6
 50.000000 + 6.000000 = 56.000000
 
+```
+
 ##  8. Program to find maximum between 2 numbers using function
+```C
 #include <stdio.h>
-
-
 int max(int num1, int num2);
-
-
-
 int main() 
 {
     int num1, num2, maximum;
@@ -290,21 +324,22 @@ int main()
     
     return 0;
 }
-
-
-
 int max(int num1, int num2)
 {
     return (num1 > num2 ) ? num1 : num2;
 }
+```
 
 ## Output of the program
+```C
 Enter any two numbers: 5 7
 
 Maximum = 7
 
+```
 
 ##  9. Program to find prime number using function.
+```C
 #include<stdio.h>
  
 int check_prime(int);
@@ -337,14 +372,17 @@ int check_prime(int n)
    }
    return 1;
 }
+```
 
 ## Output of the program
+```C
 Enter an integer to check whether it is prime or not.
 7
 7 is prime.
 
+```
 ##  10. Program for function using call by value.
-
+```C
 #include <stdio.h>
 
 swap (int, int);
@@ -384,10 +422,10 @@ a = b;
 b = temp;
 
 }
-
+```
 
 ## Output of the program
-
+```C
 Enter value of a & b: 10 20
 
 Before Swapping:
@@ -401,7 +439,10 @@ After Swapping:
 a = 10
 
 b = 20
+
+```
 ##  11. Program for function using call by reference.
+```C
 #include <stdio.h>
 void increment(int  *var)
 {
@@ -416,11 +457,16 @@ int main()
      printf("Value of num is: %d", num);
    return 0;
 }
+```
+
 ## Output of the program
+
+```C
 Value of num is: 21
 
+```
 ##  12. Program to take 5 values from user and store them in an array. Print the elements stored in the array.
-
+```C
 #include <stdio.h>
 
 int main() 
@@ -452,9 +498,9 @@ int main()
   
 }
 
-
+```
 ## Output of the program
-
+```C
 Enter 5 integers: 1
 
 -3
@@ -475,9 +521,9 @@ Displaying integers: 1
 
 3
 
-
-##  13. Program to find average of n numbers using arrays.
-
+```
+##  13. Program to find average of n numbers using arrays
+```C
  #include <stdio.h>
  
     int main()
@@ -518,8 +564,11 @@ Displaying integers: 1
         return 0;
         
     }
+
+```
 ## Output of the program
 
+```C
 Enter the numbers of elements: 6
 
 1. Enter number: 45.3
@@ -536,9 +585,9 @@ Enter the numbers of elements: 6
 
 Average = 27.69
 
-
+```
 ##  14.Program to accept sorted array and do search using binary search. 
-
+```C
  #include <stdio.h>
  
   void main()
@@ -615,9 +664,9 @@ int i, j, num, temp, keynum;
  printf("SEARCH FAILED \n");
    }
  }
- 
+ ```
 ## Output of the program
-
+```C
 Enter the value of num 
 
 2
@@ -641,9 +690,9 @@ Enter the element to be searched
 5
 SEARCH SUCCESSFUL
 
-
+```
 ##  15.Program to Implement Linear search.
-
+```C
 #include<stdio.h>
 int main()
 {
@@ -672,9 +721,9 @@ int main()
 }
         return 0;
 }
-
+```
 ## Output of the program
-
+```C
 Enter the number of elements in array:4
 
 Enter[0] element:2
@@ -685,9 +734,10 @@ Enter[3] element:5
 Enter a number to search:6
 
  6 is present at location 2.
+```
  
 ##  16.Program to Sort N Numbers in Asending Order using Bubble Sort
-
+```C
 #include <stdio.h>
 
 #define MAXSIZE 10
@@ -763,9 +813,9 @@ void main()
     }
 
 }
-
+```
 ## Output of the program
-
+```C
 Enter the value of num
 
 6
@@ -812,8 +862,9 @@ Sorted array is...
 
 89
 
+```
 ##  17.Program to declare,assignand access a pointer variable.
-
+```C
 #include <stdio.h>
 
 int main()
@@ -835,9 +886,9 @@ int main()
  
    return 0;
 }
-
+```
 ## Output of the program
-
+```C
 Using variable num:
 
     value of num: 100
@@ -850,9 +901,9 @@ Using variable num:
     
     address of num: 2764564284
     
-
+```
 ##  18.Program to store information of a student using structure.
-
+```C
 #include <stdio.h>
 
 struct student
@@ -919,9 +970,10 @@ int main()
     
 }
 
-
+```
  ## Output of the program
- 
+
+ ```C
 Enter information of students: 
 
 For roll number1,
@@ -951,8 +1003,9 @@ Marks: 98
 .
 .
 
+```
 ##  19.Program to find factorial of a number using recursion.
-
+```C
   #include <stdio.h>
   
   
@@ -989,17 +1042,17 @@ Marks: 98
             
     }
     
-
+```
 ## Output of the program
-
+```C
 Enter a positive integer: 6
 
 Factorial of 6 = 720
 
 
-
+```
 ##  20.Program to display fibonacci series using recursion.
-
+```C
 #include <stdio.h>
 
 
@@ -1043,9 +1096,10 @@ int main()
   
 }
 
-
+```
 ## Output of the program
 
+```C
 Enter the number of terms
 
 5
@@ -1060,3 +1114,4 @@ First 5 terms of Fibonacci series are:
 2
 
 3
+```
